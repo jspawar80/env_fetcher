@@ -1,4 +1,5 @@
-
+## Description
+This project provides a server-side interface to manage and interact with remote Docker instances. Through the provided endpoints, users can fetch a list of available instances, retrieve running containers in those instances, and manage environment configurations for specific containers. The system uses SSH to communicate with the remote instances, allowing for secure interactions.
 
 ## Installation
 
@@ -10,40 +11,14 @@
    npm install
    ```
 
-
-### Frontend Server
-
-1. **Start the Frontend Server**
-   ```bash
-   node index.html
-   ```
-
-   This will start the frontend server on `http://localhost:3000`.
-
-2. **Available Endpoints**
-
-   - **GET** `/` - Serves the main frontend page.
-   - **GET** `/get-instances` - Retrieves the list of available instances.
-   - **GET** `/containers/:instanceName` - Fetches the containers for a given instance.
-   - **GET** `/config/:instanceName/:containerId` - Retrieves the environment configuration for a specific container in an instance.
-   - **POST** `/save-config/:instanceName/:containerId` - Updates the environment configuration for a specific container in an instance.
-
-### Backend Server
-
-1. **Start the Backend Server**
+3. **Start the App**
    ```bash
    node main.js
    ```
 
-   This will start the backend server on `http://localhost:3000`.
+   This will start the frontend server on `http://localhost:3000`.
 
-2. **Available Endpoints**
 
-   - **GET** `/` - Serves the main backend page.
-   - **GET** `/get-instances` - Retrieves the list of available instances.
-   - **GET** `/containers/:instanceName` - Fetches the containers for a given instance.
-   - **GET** `/config/:instanceName/:containerId` - Retrieves the environment configuration for a specific container in an instance.
-   - **POST** `/save-config/:instanceName/:containerId` - Updates the environment configuration for a specific container in an instance.
 
 ## Configuration
 
