@@ -10,9 +10,9 @@ const instances = [
     {
         name: 'jay1',
         user: 'root',
-        host: '143.110.190.57',
+        host: '143.110.000.111',
         port: 911,
-        privateKey: '/home/ishu/balpreet.pem',
+        privateKey: '/home/ishu/key.pem',
         paths: ['/usr/src/app/.env']
     },
 ];
